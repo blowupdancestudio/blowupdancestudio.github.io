@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  /*background: #1f1f2e;*/
+  background: linear-gradient(to bottom right, #cc3300, #005ce6 1000px, white )fixed;
+  background-repeat: no-repeat;
+  
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  /*background-color: #1f1f2e; */
+  
+  font-family: 'Righteous', cursive;
+}
+
+.header h1 {
+  font-size: 100px;
+  margin-block-start: 0px;
+  /*color: #cc3300;*/
+}
+
+.header p {
+  font-size: 50px;
+  margin-block-end: 0px;
+  /*color: #cc3300;*/
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top:0px;
+
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #008080;
+  color: black;
+}
+
+.active {
+  background-color: #333333;
+}
+
+.cardBaner{
+  /*background-color: #1f1f2e;*/
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.logo {
+  /*background-color: #aaa;*/
+  width: 100%;
+}
+
+.cardlogo{
+  /*background-color: #1f1f2e;*/
+}
+
+.card-add {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px ;
+  font-family: 'Roboto Slab', serif
+}
+
+/* Add a card effect for articles */
+.card {
+  /*background-color: #ffffff;*/
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.card-link {
+  float: right;
+  margin-right: 15%;
+}
+
+.baner{
+  width:43%;
+  padding: 5px;
+  margin-left: 4.5%;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .baner{
+    width:90%;
+    padding: 0px;
+    margin-left: 4.5%;
+  }
+}
