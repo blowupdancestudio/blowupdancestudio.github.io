@@ -7,7 +7,7 @@ body {
   padding: 10px;
   /*background: #1f1f2e;*/
   background: linear-gradient(to bottom right, #cc3300, #005ce6 1000px, white )fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
   
 }
 
@@ -62,32 +62,28 @@ body {
   background-color: #333333;
 }
 
-.cardBaner{
-  /*background-color: #1f1f2e;*/
+.row {
+  display: grid;
+  grid-template-columns: 75% 25%;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
+.allbaner {
+  display: grid;
+  grid-template-columns: 100%;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
+.links {
+  display: grid;
+  grid-template-columns: 100%;
+
 }
 
-/* Fake image */
+.cardlogo {
+  text-align: center;
+}
+
 .logo {
-  /*background-color: #aaa;*/
   width: 100%;
-}
-
-.cardlogo{
-  /*background-color: #1f1f2e;*/
 }
 
 .card-add {
@@ -97,37 +93,37 @@ body {
   font-family: 'Roboto Slab', serif
 }
 
-/* Add a card effect for articles */
 .card {
-  /*background-color: #ffffff;*/
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
 }
-.card-link {
-  float: right;
-  margin-right: 15%;
+
+.cardBaner {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
-.baner{
-  width:43%;
-  padding: 5px;
-  margin-left: 4.5%;
+.baner {
   border-radius: 10px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.card-link {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
 
@@ -137,6 +133,8 @@ body {
     float: none;
     width: 100%;
   }
+
+
 }
 
 @media screen and (max-width: 600px) {
