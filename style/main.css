@@ -125,16 +125,7 @@ body {
   .links {
     display: grid;
     grid-template-columns: 100%;
-
   }
-  .cardlogo {
-    text-align: center;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
