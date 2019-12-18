@@ -100,13 +100,14 @@ body {
 }
 
 .cardBaner {
-  width: 70%;
+  width: 100%;
   text-align: center;
   padding: 10px;
 }
 
 .baner {
   border-radius: 10px;
+  width: 70vh;
 }
 
 .card-link {
